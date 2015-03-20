@@ -1,10 +1,24 @@
 [submodule "core-firmware"]
 	path = core-firmware
 	url = https://github.com/spark/core-firmware.git
-  ignore = dirty
+	ignore = dirty
 [submodule "core-common-lib"]
 	path = core-common-lib
 	url = https://github.com/spark/core-common-lib.git
 [submodule "core-communication-lib"]
 	path = core-communication-lib
 	url = https://github.com/spark/core-communication-lib.git
+[submodule "applications/growr/lib/NtpClient"]
+	path = applications/growr/lib/NtpClient
+	url = https://github.com/rudimeyer/NtpClient.git
+	ignore = dirty
+[submodule "applications/growr/lib/OneWireSpark"]
+	path = applications/growr/lib/OneWireSpark
+	url = https://github.com/Hotaman/OneWireSpark.git
+[submodule "applications/growr/lib/SparkCoreDallasTemperature"]
+	path = applications/growr/lib/SparkCoreDallasTemperature
+	url = https://github.com/tomdeboer/SparkCoreDallasTemperature.git
+	ignore = dirty
+[submodule "applications/growr/lib/Adafruit_DHT_Library"]
+	path = applications/growr/lib/Adafruit_DHT_Library
+	url = https://github.com/russgrue/Adafruit_DHT_Library.git
