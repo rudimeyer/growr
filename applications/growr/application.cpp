@@ -73,7 +73,7 @@ unsigned long pulseIn(uint16_t pin, uint8_t state) {
     if (loopCount++ == loopMax) {
       return 0;
     }
-  }
+  } 
   // Iterate the pulseCount variable each time through the loop to measure the pulse length; we also still keep track of the timeout.
   while (GPIO_ReadInputDataBit(portMask, pinMask) == state) {
     if (loopCount++ == loopMax) {
@@ -233,7 +233,7 @@ void logSensorData(bool transmit = true) {
   strcat(payload, range);
   
   // Log resservoir water table
-  r = getRange(RANGE_TUBE_TRIGGER, RANGE_TANK_ECHO  );
+  r = getRange(RANGE_TANK_TRIGGER, RANGE_TANK_ECHO);
   sprintf(range, "%.2f", r);
   strcat(payload, "\", \"water_table_resservoir\": \"");
   strcat(payload, range);
@@ -313,8 +313,8 @@ void setup() {
   // Set Range pins
   pinMode(RANGE_TUBE_TRIGGER, OUTPUT);
   pinMode(RANGE_TUBE_ECHO, INPUT);
-  //pinMode(RANGE_TANK_TRIGGER, OUTPUT);
-  //pinMode(RANGE_TANK_ECHO, INPUT);
+  pinMode(RANGE_TANK_TRIGGER, OUTPUT);
+  pinMode(RANGE_TANK_ECHO, INPUT);
 
   dht_internal.begin();
   dht_external.begin();
