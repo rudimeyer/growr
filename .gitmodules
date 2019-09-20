@@ -19,6 +19,6 @@
 	path = applications/growr/lib/SparkCoreDallasTemperature
 	url = https://github.com/tomdeboer/SparkCoreDallasTemperature.git
 	ignore = dirty
-[submodule "applications/growr/lib/Adafruit_DHT_Library"]
-	path = applications/growr/lib/Adafruit_DHT_Library
-	url = https://github.com/russgrue/Adafruit_DHT_Library.git
+#[submodule "applications/growr/lib/Adafruit_DHT_Library"]
+#	path = applications/growr/lib/Adafruit_DHT_Library
+#	url = https://github.com/russgrue/Adafruit_DHT_Library.git
